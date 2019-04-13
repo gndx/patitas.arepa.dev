@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "NODE_ENV=production lint-staged",
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production"
   },
@@ -29,6 +28,7 @@
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "eslint": "^5.16.0",
@@ -47,12 +47,5 @@
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.3.1"
-  },
-  "lint-staged": {
-    "*.{js,jsx}": [
-      "pretty-quick --staged",
-      "eslint src/ --fix",
-      "git add"
-    ]
   }
 }

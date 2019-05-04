@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400");
+@import url("https://use.fontawesome.com/releases/v5.7.2/css/all.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f8fb;
+  font-family: 'Roboto', sans-serif;
+  color: #8c93bd;
+}
+.Header {
+  padding: 0.5em;
+  background-color: #fff;
+  border-bottom: 1px solid #e5eff5;
+}
+.Header-container {
+  grid-template-columns: minmax(auto, 1024px);
+  display: grid;
+  justify-content: center;
+}
+.Header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Header-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Header h1 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #1d113c;
+}
+.Header h1 span {
+  padding: 3px 9px;
+  font-weight: 300;
+  border-radius: 6px;
+  font-size: 0.8em;
+  letter-spacing: 1.2px;
+  color: #fff;
+  background-image: linear-gradient(45deg, #282758, #3d4aa2);
+}
+.Header img {
+  width: 54px;
+  height: 26px;
+}
+.Header ul {
+  margin: 0;
+  padding: 0;
+}
+.Header li {
+  display: inline;
+  margin: 0 0 0 1em;
+  font-size: 0.9em;
+  font-weight: 300;
+  cursor: pointer;
+}
+.Header a {
+  text-decoration: none;
+  color: #1d113c;
+}
+.Header-fbLogin {
+  padding: 3px 9px;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #3b5998;
+  cursor: pointer;
+}
+.Header-fbLogin a{
+  color: #fff;
+}
+.NotFount {
+  padding: 1em;
+}
+.NotFount-container {
+  grid-template-columns: minmax(auto, 640px);
+  display: grid;
+  justify-content: center;
+}
+.NotFount img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.Login {
+  padding: 1em;
+  text-align: center;
+}
+.Login-container {
+  grid-template-columns: minmax(auto, 640px);
+  display: grid;
+  justify-content: center;
+}
+.Login button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #3b5998;
+  cursor: pointer;
+  font-size: 16px;
+  width: 280px;
+  margin: 0 auto;
+}
+.Login i {
+  margin: 0 .5em 0 0;
+  font-size: 20px;
+}
+.Dashboard {
+  padding: 1em;
+}
+.Dashboard-container {
+  grid-template-columns: minmax(auto, 1024px);
+  display: grid;
+  justify-content: center;
+}
+.Dashboard-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+.Dashboard-profile-info {
+  display: flex;
+  align-items: flex-start;
+}
+.Dashboard-profile-info img {
+  margin: 0 1em 0 0;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.Dashboard-profile-info h4 {
+  margin: 0 0 .5em 0;
+}
+.Dashboard-profile-info span {
+  font-size: 14px;
+  font-weight: 300;
+}
+.Dashboard-profile-info button {
+  margin: 1em 0;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #3b5998;
+  cursor: pointer;
+  font-size: 14px;
+  width: 200px;
+}
+.Home {
+  padding: 2em 1em;
+}
+.Home a {
+  text-decoration: none;
+}
+.Home-container {
+  grid-template-columns: minmax(auto, 1024px);
+  display: grid;
+  justify-content: center;
+}
+.Home-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  grid-row-gap: 1em;
+}
+.Pets-items-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  grid-row-gap: 1em;
+}
+.Pets {
+  overflow: hidden;
+  background: #fff 50%;
+  background-size: cover;
+  border-radius: 5px;
+  box-shadow: 8px 14px 38px rgba(39,44,49,0.06), 1px 3px 8px rgba(39,44,49,0.03);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.Pets a {
+  text-decoration: none;
+}
+.Pets-cover {
+  min-height: 200px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center;
+  position: relative !important;
+  object-fit: cover;
+}
+.Pets-cover span {
+  font-size: 22px;
+  object-fit: cover;
+  border-radius: 100%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+}
+.Pets-type {
+  z-index: 5;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 300;
+  border-radius: 6px 0 0 6px;
+  padding: 3px 6px;
+  background-image: linear-gradient(150deg, #4545f5, #37dcff);
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Pets-cover-color {
+  background-image: linear-gradient(45deg, #7d4ac7, #ffa1b3);
+  overflow: hidden;
+  position: absolute;
+  height: auto;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 2;
+  opacity: 0.4;
+  z-index: 1;
+}
+.Pets-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Pets-head i {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+}
+.Pets-item-info {
+  margin: 0.5em 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.Pets-item-info img{
+  width: 28px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin: 0 .5em 0 0;
+}
+.Pets-item-info i{
+  padding: 0 .4em;
+}
+.Pets-content {
+  padding: 1em;
+}
+.Pets-content h2 {
+  font-size: 1em;
+  margin: 0;
+  font-weight: 500;
+  color: #374348;
+}
+.Pets-content p {
+  font-size: 0.8em;
+  letter-spacing: 1.25;
+  color: #738a94;
+}
+.Pets-content span {
+  font-size: 0.7em;
+  color: #738a94;
+  text-transform: uppercase;
+}
+.Pets-content i {
+  margin: 0 0.2em 0 0;
+}
+.PetInfo-container {
+  grid-template-columns: minmax(auto, 1024px);
+  display: grid;
+  justify-content: center;
+}
+.PetInfo-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3em;
+}
+.PetInfo-name {
+  display: flex;
+  align-items: center;
+}
+.PetInfo-name h2 {
+  margin: 0 .5em 0 0;
+}
+.PetInfo-name span {
+  font-size: 20px;
+}
+.PetInfo-avatar img {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+}
+.PetInfo-item h4 {
+  margin: .5em 0;
+}
+.PetInfo-item {
+  margin: .5em 0;
+}
+.PetInfo-item span {
+  font-size: 16px;
+  font-weight: 300;
+}
+.PetInfo-item a {
+  text-decoration: none;
+  color: #8c93bd;
+}
+.PetInfo-item i {
+  margin: 0 .5em 0 0;
+}
+.PetInfo-btn {
+  width: 200px;
+  background-image: linear-gradient(150deg, #4545f5, #37dcff);
+  color: #fff;
+  padding: 8px 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.Footer {
+  padding: 0.5em;
+  margin: 2em 0 0 0;
+  background-color: #fff;
+  border-top: 1px solid #e5eff5;
+  border-bottom: 1px solid #e5eff5;
+}
+.Footer-container {
+  grid-template-columns: minmax(auto, 1024px);
+  display: grid;
+  justify-content: center;
+}
+.Footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Footer h2 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #1d113c;
+}
+.Footer span {
+  padding: 3px 9px;
+  font-weight: 300;
+  border-radius: 6px;
+  font-size: 0.8em;
+  letter-spacing: 1.2px;
+  color: #fff;
+  background-image: linear-gradient(45deg, #282758, #3d4aa2);
+}
+.Footer-social i {
+  margin: 0 .5em 0 0;
+  font-size: 20px;
+}
+.Modal {
+  position: relative;
+}
+.Modal-wrapper {
+  transition: all 0.8s;
+  position: absolute;
+  z-index: 8;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100vh);
+  opacity: 0;
+}
+.Modal-wrapper.showModal {
+  transform: translateY(0vh);
+  opacity: 1;
+}
+.Modal-overlay {
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 8;
+  cursor: pointer;
+}
+.Modal-login {
+  background-color: #fff;
+  padding: 1em;
+  display: block;
+  width: 420px;
+  position: relative;
+}
+.Form {
+  background-color: #fff;
+  padding: 1em;
+  display: block;
+  width: 420px;
+  position: relative;
+}
+.Form-head {
+  display: flex;
+  justify-content: space-between;
+}
+.Form-head h2 {
+  margin: 0 0 .5em 0;
+}
+.Form-head i {
+  font-size: 20px;
+  cursor: pointer;
+}
+.Form select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.Form select {
+  width: 100%;
+  height: 38px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.Form input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.Form button {
+  width: 100%;
+  background-image: linear-gradient(150deg, #4545f5, #37dcff);
+  color: #fff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
